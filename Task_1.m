@@ -36,7 +36,7 @@ T_s = 2*pi/N;
 h = figure;
 axis tight manual % this ensures that getframe() returns a consistent size
 filename = 'anim.gif';
-for n = 1:N
+for n = 1:5:N
     fplot(x,y,'k');
     hold on;
     fplot(x,y,[-pi -pi+T_s*n],'b','linewidth',2),title("Trajectory");
